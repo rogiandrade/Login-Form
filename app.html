@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Login App</title>
+</head>
+<body onload="time()">
+    <div class="container">
+        <div class="screen">
+            <div class="statusbar">
+                <div id="time"><p class="time"></p></div>
+                <div class="indicator"><img src="images/Indicators.png" width="70px" alt="reception"></div>
+            </div>
+            <div class="homebtn"><img src="./images/HomeIndicator.png" alt="home"></div>
+            <div class="island"></div>
+            <img class="logo" src="./images/logo.svg" alt="logo">
+            <div class="header">
+                <img src="./images/log-in.svg" alt="login">
+                <h1>Faça seu login</h1>
+                <p1>Entre com suas informações de cadastro.</p1>
+            </div>
+            <div class="login">
+                <form>
+                    <label class="email" for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" autocomplete="off">
+                    <label class="password" for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha">
+                    <img class="eye" src="./images/eye.svg" alt="view password" onclick="myFunction()">
+                    <input id="checkbox" type="checkbox" name="checkbox" value="lembre-me">
+                    <label class="checkbox" for="checkbox">Lembre-me</label>
+                    <input id="submit" type="submit" value="ENTRAR">
+                </form>
+                <p2>Esqueci minha senha</p2>
+            </div>
+            <h2>Não tem uma conta? <b>Registre-se</b></h2>
+        </div>
+        <i class="btn btn1"></i>
+        <i class="btn btn2"></i>
+        <i class="btn btn3"></i>
+        <i class="right"></i>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
